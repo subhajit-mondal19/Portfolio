@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#home" class="logo">YourName</a>
+    <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <nav id="nav-menu" class="nav-menu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1>Hi, I'm Your Name.</h1>
+      <p>I'm a student learning to build full-stack web apps.</p>
+      <a href="#projects" class="btn">See my work</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>Write two or three sentences about yourself here: what you study, what you're learning, and what you want to build.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="card">
+          <h3>Portfolio site</h3>
+          <p>The site you are looking at, built with HTML, CSS, and JavaScript.</p>
+        </article>
+        <article class="card">
+          <h3>Project two</h3>
+          <p>A short description of something you will build next.</p>
+        </article>
+        <article class="card">
+          <h3>Project three</h3>
+          <p>Another short description. Replace this later.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
