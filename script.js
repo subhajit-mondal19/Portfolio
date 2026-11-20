@@ -13,16 +13,22 @@ navToggle.addEventListener("click", () => {
 
 // Theme change dark & white
 const thmchg=document.querySelector(".theme-change")
+const html=document.documentElement
+
+const savedtheme=localStorage.getItem("theme")
+if(savedtheme){
+  html.setAttribute("data-theme",savedtheme)
+}
+
 thmchg.addEventListener("click",()=>{
 
-  const html=document.documentElement
-  const flag=html.getAttribute("data-theme")
+  const currentTheme=html.getAttribute("data-theme")
 
-  if(flag==='light'){
-    html.setAttribute("data-theme","dark")
-  }
-  else{
-    html.setAttribute("data-theme","light")
-  }
+  const newTheme=currentTheme==="dark"?"light":"dark"
+  
+
+  html.setAttribute("data-theme",newTheme)
+
+  localStorage.setItem("theme",newTheme)
 
 })
