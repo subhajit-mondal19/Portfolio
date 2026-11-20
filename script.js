@@ -9,3 +9,7 @@ navToggle.addEventListener("click", () => {
   const isOpen = navMenu.classList.toggle("open");
   navToggle.setAttribute("aria-expanded", String(isOpen));
 });
+
+
+// Theme change dark & white
+const thmchg=document.querySelector(".theme-change")
