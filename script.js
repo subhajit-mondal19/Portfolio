@@ -13,3 +13,16 @@ navToggle.addEventListener("click", () => {
 
 // Theme change dark & white
 const thmchg=document.querySelector(".theme-change")
+thmchg.addEventListener("click",()=>{
+
+  const html=document.documentElement
+  const flag=html.getAttribute("data-theme")
+
+  if(flag==='light'){
+    html.setAttribute("data-theme","dark")
+  }
+  else{
+    html.setAttribute("data-theme","light")
+  }
+
+})
