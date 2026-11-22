@@ -48,6 +48,10 @@ const projects=[
   {
     head:"Atlas — Multi-Tenant AI Knowledge & Retrieval Engine",
     desc:"Build a backend platform that allows companies to upload documents, connect sources, and query their private knowledge using AI.Work In Progress..."
+  },
+  {
+    head: "Weather Forecast App",
+    desc: "A weather application that fetches real-time weather data using an external API and displays temperature, humidity, wind speed, and weather conditions based on the user's location."
   }
 
 ]
