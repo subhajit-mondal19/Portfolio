@@ -32,3 +32,41 @@ thmchg.addEventListener("click",()=>{
   localStorage.setItem("theme",newTheme)
 
 })
+
+//Adding Project Card
+
+const projects=[
+  {
+    head:"Portfolio Site",
+    desc:"The site you are looking at, built with HTML, CSS, and JavaScript.This is my first official project i made similar easy websites merely crossing 3 or 4 . But this was the start of my journey and today i am where i am. I have kept this project to say to the beginners who gets demotivated easily and thing its not their cup of tea. Remember every master was a Beginner..."
+
+  },
+  {
+    head:"Forge-Distributed AI agent & Workflow Runtime",
+    desc:"Users define workflows containing AI agents, tools, API calls, conditionals, parallel branches, and human approval steps. Your backend executes them reliably.Work In Progress..."
+  },
+  {
+    head:"Atlas — Multi-Tenant AI Knowledge & Retrieval Engine",
+    desc:"Build a backend platform that allows companies to upload documents, connect sources, and query their private knowledge using AI.Work In Progress..."
+  }
+
+]
+
+const projectlist=document.querySelector(".project-grid");
+
+projects.forEach((project)=>{
+  const card = document.createElement("article");
+  const head=document.createElement ("h3");
+  const desc=document.createElement("p");
+
+  card.classList.add("card")
+  head.classList.add("card-head")
+  desc.classList.add("card-desc")
+
+  head.textContent=project.head
+  desc.textContent=project.desc
+
+  card.append(head,desc)
+
+  projectlist.append(card)
+})
